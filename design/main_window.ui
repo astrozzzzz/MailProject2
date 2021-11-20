@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>604</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>604</width>
+    <height>495</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>604</width>
+    <height>495</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Форма</string>
+  </property>
+  <widget class="QPushButton" name="write_mail_btn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Написать письмо</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Фильтры</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="incoming_rbn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Входящие</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">radio_buttons</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="sent_rbn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Исходящие</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">radio_buttons</string>
+   </attribute>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>0</y>
+     <width>21</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Письма</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="previuos_page">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>440</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt; Назад</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="next_page">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>440</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вперёд &gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="show_btn1">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>60</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>110</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn3">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>210</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn5">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn6">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>310</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="show_btn7">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Посмотреть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">show_btn_group</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Аккаунт:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Bob</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pages">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>440</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Страница 1/1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>140</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма                           </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>290</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_5">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>240</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>190</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отправитель: Заголовок письма</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="message_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>301</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Отправитель1: Заголовок письма</string>
+   </property>
+   <property name="visibility" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reload_btn">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>10</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Обновить </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="radio_buttons"/>
+  <buttongroup name="show_btn_group"/>
+ </buttongroups>
+</ui>

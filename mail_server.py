@@ -1,9 +1,7 @@
 import socket
 
-
 from threading import Thread
-from db_work import DBHandler
-
+from database.db_work import DBHandler
 
 CODES = {
     '001': 'check user',
@@ -85,10 +83,13 @@ class MailServer:
 
     def start_server(self):
         while True:
-            user_socket, address = self.server.accept()
-            print('User connected')
-            user_thread = Thread(target=self.listen_user, args=(user_socket,))
-            user_thread.start()
+            try:
+                user_socket, address = self.server.accept()
+                print('User connected')
+                user_thread = Thread(target=self.listen_user, args=(user_socket,))
+                user_thread.start()
+            except Exception:
+                print('Проблема с подключением юзеров')
 
 
 server = MailServer()
