@@ -36,7 +36,7 @@ class Registration(QWidget):
             # Проверка, есть ли пользователь в базе
             username = self.lineEdit.text()
             if username == '':
-                self.label_3.setText('Ввдеите имя пользователя')
+                self.label_3.setText('Введите имя пользователя')
             else:
                 message = '001' + username
                 self.client.send(message.encode("utf-8"))

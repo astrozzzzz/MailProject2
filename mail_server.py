@@ -61,15 +61,21 @@ class MailServer:
                             user.send("500".encode("Utf-8"))
                     elif action == 'get messages to user':
                         mails = self.db.mails_to_user(data[3:])
+                        print('start')
                         for i in mails:
                             print(i, '1')
                             user.send('%%'.join(i).encode("utf-8"))
+                            user.recv(2048)
+                        print('end')
                         user.send('404'.encode("utf-8"))
                     elif action == 'get messages from user':
                         mails = self.db.mails_from_user(data[3:])
+                        print('start')
                         for i in mails:
                             print(i)
                             user.send('%%'.join(i).encode("utf-8"))
+                            user.recv(2048)
+                        print('end')
                         user.send('404'.encode("utf-8"))
                     elif action == 'delete mail':
                         print(data)

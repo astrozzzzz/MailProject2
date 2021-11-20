@@ -63,6 +63,7 @@ class Client(QWidget):
             print(response)
             if response == ['404']:
                 break
+            self.client.send('500'.encode("utf-8"))
             self.mails.append(Mail(response[0], response[1], response[2], response[3], response[4]))
         self.mails = list(reversed(self.mails))
         print(self.mails)
